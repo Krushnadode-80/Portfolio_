@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Krushna Dode | Web Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Background Glows -->
+    <div class="bg-glow"></div>
+    <div class="bg-glow-2"></div>
+
+    <!-- DESKTOP NAV -->
+    <nav id="desktop-nav">
+      <div class="logo">Krushna Dode</div>
+      <ul class="nav-links">
+        <li><a href="#profile">Home</a></li>
+        <li><a href="#about">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- HAMBURGER NAV -->
+    <nav id="hamburger-nav">
+      <div class="logo">Krushna Dode</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#profile">Home</a></li>
+          <li><a href="#about">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <!-- PROFILE (HERO) -->
+    <section id="profile" class="reveal">
+      <div class="hero-text">
+        <p class="greeting">Hello, I'm</p>
+        <h1 class="title">Krushna Dode</h1>
+        <div class="typing-container">
+          <span id="typing-text"></span><span class="cursor">|</span>
+        </div>
+        <p class="description">
+          Web Developer with hands-on experience building full-stack
+          applications using Python, FastAPI, React.js, and PostgreSQL. Skilled
+          in REST APIs, JWT authentication, payment integration, and
+          database-driven applications, with a focus on secure, scalable,
+          production-ready solutions.
+        </p>
+
+        <div class="btn-group">
+          <a
+            class="btn btn-primary"
+            href="./assets/Web_Developer.pdf"
+            download="Krushna-Dode-Resume.pdf"
+          >
+            Download CV
+          </a>
+          <button
+            class="btn btn-secondary"
+            onclick="location.href = '#contact'"
+          >
+            Contact Me
+          </button>
+        </div>
+
+        <div class="socials">
+          <a
+            class="social-icon"
+            href="https://www.linkedin.com/in/krushnakasar"
+            target="_blank"
+            rel="noopener"
+          >
+            <img src="./assets/linkedin.png" alt="LinkedIn" />
+          </a>
+          <a
+            class="social-icon"
+            href="https://github.com/Krushnadode-80"
+            target="_blank"
+            rel="noopener"
+          >
+            <img src="./assets/github.png" alt="GitHub" />
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-image-container reveal">
+        <div class="hero-blob"></div>
+        <img
+          src="./assets/profile-pic-4.jpeg"
+          alt="Krushna Dode"
+          class="hero-image"
+        />
+      </div>
+    </section>
+
+    <!-- ABOUT / EXPERIENCE -->
+    <section id="about">
+      <p class="section-subtitle reveal">My Journey</p>
+      <h2 class="section-title reveal">Experience & Education</h2>
+
+      <div class="timeline">
+        <!-- Experience 1 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">Jul 2025 - Dec 2025</span>
+            <h3 class="timeline-title">Web Developer</h3>
+            <p class="timeline-org">Cunning E-Learnify Software Pvt. Ltd.</p>
+            <p class="timeline-desc">
+              Developed full-stack web applications using React.js, Python,
+              FastAPI, and PostgreSQL. Built responsive user interfaces and
+              RESTful APIs to support application workflows. Implemented JWT
+              authentication and optimized database queries for better
+              performance. Followed clean coding practices to ensure scalable,
+              secure, and maintainable applications.
+            </p>
+          </div>
+        </div>
+
+        <!-- Education 1 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2025</span>
+            <h3 class="timeline-title">BCA - Computer Applications</h3>
+            <p class="timeline-org">KBCNMU University</p>
+            <p class="timeline-desc">
+              Graduated with a CGPA of 8.55, focusing on core computer science
+              and data analysis concepts.
+            </p>
+          </div>
+        </div>
+
+        <!-- Education 2 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2022</span>
+            <h3 class="timeline-title">Higher Secondary (12th)</h3>
+            <p class="timeline-org">Maharashtra Board</p>
+            <p class="timeline-desc">Completed with 74.67% aggregate.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <p class="section-subtitle reveal">Explore My</p>
+      <h2 class="section-title reveal">Technical Skills</h2>
+
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <div class="skill-icon">DEV</div>
+          <h3 class="skill-title">Technical Skills</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">JavaScript (ES6+)</span>
+            <span class="skill-tag">React.js</span>
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">Axios</span>
+            <span class="skill-tag">React Router</span>
+            <span class="skill-tag">FastAPI</span>
+            <span class="skill-tag">Flask</span>
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">JWT Authentication</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">Vercel</span>
+            <span class="skill-tag">Netlify</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <p class="section-subtitle reveal">Browse My Recent</p>
+      <h2 class="section-title reveal">Projects</h2>
+
+      <div class="projects-grid">
+        <div class="project-card reveal">
+          <div class="project-content">
+            <div class="project-icon-wrapper" aria-hidden="true">
+              <svg viewBox="0 0 64 64">
+                <circle cx="14" cy="48" r="7" />
+                <circle cx="50" cy="48" r="7" />
+                <path
+                  d="M21 48h22l-7-24h10l8 24M36 24H25L14 48M29 36h20M38 24l-4-9H23M34 15h10"
+                />
+              </svg>
+            </div>
+            <h3 class="project-title">
+              SmartRide | Bike Rental Management Platform
+            </h3>
+            <p class="project-desc">
+              Built a full-stack bike rental platform with secure authentication
+              and role-based access. Integrated Razorpay and QR-based payments,
+              designed an admin dashboard for inventory, bookings, users, and
+              revenue analytics, and developed APIs for booking, cancellation,
+              and availability.
+            </p>
+            <p class="project-tech">FastAPI, React.js, PostgreSQL, Razorpay</p>
+            <a
+              href="https://github.com/Krushnadode-80/bike-rental-system-"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-link"
+              >GitHub &rarr;</a
+            >
+            <a
+              href="https://bike-rental-system-platform.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-link"
+              >Live &rarr;</a
+            >
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-content">
+            <div class="project-icon-wrapper" aria-hidden="true">
+              <svg viewBox="0 0 64 64">
+                <path
+                  d="M8 15a8 8 0 0 1 8-8h25a8 8 0 0 1 8 8v15a8 8 0 0 1-8 8H27L16 46v-8a8 8 0 0 1-8-8Z"
+                />
+                <path d="M34 43h8l11 8v-8a8 8 0 0 0 7-8V24" />
+                <circle cx="22" cy="23" r="2" />
+                <circle cx="31" cy="23" r="2" />
+                <circle cx="40" cy="23" r="2" />
+              </svg>
+            </div>
+            <h3 class="project-title">Chatify | Real-Time Chat Application</h3>
+            <p class="project-desc">
+              Built a real-time chat app with Socket.io for live messaging and
+              online presence. Added secure image sharing with Cloudinary, JWT
+              authentication, online/offline status, and real-time message
+              delivery.
+            </p>
+            <p class="project-tech">
+              React.js, Node.js, Socket.io, MongoDB, Cloudinary
+            </p>
+            <a
+              href="https://github.com/Krushnadode-80/Realtime-Chat-Application"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-link"
+              >GitHub &rarr;</a
+            >
+            <a
+              href="https://chatify-gj1p.onrender.com/login"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-link"
+              >Live &rarr;</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <p class="section-subtitle reveal">Get in Touch</p>
+      <h2 class="section-title reveal">Contact Me</h2>
+
+      <div class="contact-container reveal">
+        <div class="contact-info-wrapper">
+          <div class="contact-text">
+            <h3>Let's Talk</h3>
+            <p>
+              I am actively looking for new opportunities. Whether you have a
+              question or just want to say hi, I'll try my best to get back to
+              you!
+            </p>
+          </div>
+
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.4 19.4 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2Z"
+                  />
+                </svg>
+              </div>
+              <div class="contact-item-text">
+                <h4>Call</h4>
+                <p>+91 8055405020</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <rect x="2" y="4" width="20" height="16" rx="2" />
+                  <path d="m22 7-10 6L2 7" />
+                </svg>
+              </div>
+              <div class="contact-item-text">
+                <h4>Email</h4>
+                <p>krushnadode5@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z" />
+                  <circle cx="12" cy="10" r="2.5" />
+                </svg>
+              </div>
+              <div class="contact-item-text">
+                <h4>Location</h4>
+                <p>Pune, India</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form
+          action="https://formsubmit.co/305b804f6105d26dafcf79dc1a595b38"
+          method="POST"
+          class="contact-form"
+        >
+          <input
+            type="hidden"
+            name="_subject"
+            value="New message received from your portfolio website"
+          />
+          <input type="hidden" name="_template" value="basic" />
+          <div class="form-group">
+            <input
+              type="text"
+              name="name"
+              class="form-input"
+              placeholder="Your Name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="email"
+              name="email"
+              class="form-input"
+              placeholder="Your Email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <textarea
+              name="message"
+              class="form-input"
+              placeholder="Your Message"
+              rows="5"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>Â© 2025 Krushna Dode. All rights reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
